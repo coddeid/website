@@ -1,0 +1,41 @@
+:root {
+    --color-background: #fff;
+    --color-sub: #C41E3A;
+    --color-text: rgba(16, 16, 16, 0.87);
+    --color-btn: #FF4433;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+}
+
+
+/* navbar */
+nav {
+    background: var(--color-sub);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.left-section {
+    display: grid;
+    justify-content: center;
+}
+.left-section h2 {
+    position: relative;
+    padding-top: 5rem;
+    line-height: 1;
+}
+.right-section {
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+}

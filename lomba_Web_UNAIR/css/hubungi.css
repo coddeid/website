@@ -1,0 +1,116 @@
+/* Author: Dionisius Raka as codde.iD */
+/* Copyright codde.iD */
+
+:root {
+    --color-background: #fff;
+    --color-sub: #C41E3A;
+    --color-text: rgba(16, 16, 16, 0.87);
+    --color-btn: #FF4433;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+}
+
+
+/* navbar */
+nav {
+    background: var(--color-sub);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+
+section {
+    margin-top: 5rem;
+    padding: 40px 15px;
+}
+.contact {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-img {
+    position: absolute;
+    right: 50px;
+    top: 35vh;
+}
+.contact-form h1 {
+    font-size: 80px;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+span {
+    color: var(--color-sub);
+}
+.contact-form p {
+    margin-top: 4em;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form {
+    position: relative;
+}
+.contact-form form input, form textarea {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #ffb5b5;
+    color: var(--color-background);
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn {
+    display: inline-block;
+    background: var(--color-sub);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    width: 220px;
+    border-radius: 10px;
+    transition: ease 0.20s;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: ease 0.20s;
+    -moz-transition: ease 0.20s;
+    -ms-transition: ease 0.20s;
+    -o-transition: ease 0.20s;
+}
+.contact-form form .btn:hover {
+    background:#c41e3a85;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

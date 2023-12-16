@@ -1,0 +1,234 @@
+/* Author: Dionisius Raka as codde.iD */
+/* Copyright codde.iD */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #fff;
+    --color-sub: #C41E3A;
+    --color-text: rgba(16, 16, 16, 0.87);
+    --color-btn: #FF4433;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+
+    --scroll: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.7rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* navbar */
+nav {
+    background: var(--color-sub);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* Header */
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+.mid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+.left-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    text-align: justify;
+    align-items: center;
+}
+.right-section {
+    align-items: center;
+    text-align: justify;
+    display: grid;
+    padding: 5rem;
+}
+.right-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Manfaat */
+.function {
+    background: transparent;
+    height: 33rem;
+    margin-bottom: 20rem;
+}
+.function h1 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.function-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.function-left {
+    margin-right: 4rem;
+}
+.funtion-left p {
+    text-align: justify;
+    margin: 1rem 2rem 3rem;
+}
+.function-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.category {
+    color: var(--color-background);
+    background: var(--color-sub);
+    padding: 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.category:hover {
+    box-shadow: 0 5rem 3rem rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.category:nth-child(2) .category-icon {
+    background: lightcoral;
+}
+.category:nth-child(4) .category-icon {
+    background: lightskyblue;
+}
+.category-icon {
+    background: green;
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+    -webkit-border-radius: 0.9rem;
+    -moz-border-radius: 0.9rem;
+    -ms-border-radius: 0.9rem;
+    -o-border-radius: 0.9rem;
+}
+.category h5 {
+    margin: 1rem 0 1rem;
+}
+.line {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 8rem;
+    left: 10vw;
+    width: 80vw;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.37);
+}
+
+/* Benefits Other */
+.benefits {
+    margin-top: 0.2rem;
+    background: transparent;
+    /* box-shadow: 0 0 3rem rgba(0,0,0,0.5); */
+    padding-bottom: 3rem;
+}
+.benefits h2{
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    font-size: 3rem;
+}
+.ben-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.ben {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-sub);
+    color: var(--color-background);
+    cursor: pointer;
+}
+.ben h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+.ben-icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+.ben p {
+    margin-top: 0.8rem;
+    display: none;
+}
+.ben.open p {
+    display: block;
+}
